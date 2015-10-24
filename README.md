@@ -21,7 +21,7 @@ Name | Required | Default | Description
 name | yes | `nil` | unique name of resource.
 path | yes | `name` | path to archive to extract
 container_path | yes | `nil` | directory to extract archive into.
-creates | yes | `nil` relative path to file or directory found within archive. Used to determine whether archive has been extracted yet based on lack of presence, or modified timestamp
+creates | yes | `nil` | relative path to file or directory found within archive. Used to determine whether archive has been extracted yet based on lack of presence, or modified timestamp
 delete_dir_in_container | no | `nil` | relative path to directory within containing_path to delete before extracting the new archive. if unset or nil, does nothing.
 nice | no | `nil` |  process priority given to extraction subprocess. used to ensure that decompressing large archives doesn't slow down servicing customers.
 
