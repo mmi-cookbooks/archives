@@ -110,9 +110,9 @@ class Chef::Provider
 
         begin
           Chef::Mixin::Command.run_command(args)
-      rescue Chef::Exceptions::Exec => e
-        ::File.rename(@new_resource.path, "#{@new_resource.path}.failed")
-        raise e
+        rescue Chef::Exceptions::Exec => e
+          ::File.rename(@new_resource.path, "#{@new_resource.path}.failed")
+          raise e
         end
         FileUtils.touch createsPath
         new_resource.updated_by_last_action(true)

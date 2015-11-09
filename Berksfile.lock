@@ -1,0 +1,7 @@
+DEPENDENCIES
+  archives
+    path: .
+    metadata: true
+
+GRAPH
+  archives (1.0.2)

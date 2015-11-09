@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/mmi-cookbooks/archives.svg)](https://travis-ci.org/mmi-cookbooks/archives)
+
 # Archives
 
 Contains resource for handling archives. Right now only has support for tar archives compressed with gz, xz, and bzip2.
