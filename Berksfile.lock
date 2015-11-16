@@ -1,7 +1,15 @@
 DEPENDENCIES
+  apt
   archives
     path: .
     metadata: true
+  test
+    path: test/fixtures/cookbooks/test
+  yum
 
 GRAPH
+  apt (2.9.2)
   archives (1.0.2)
+  test (0.1.0)
+    archives (>= 0.0.0)
+  yum (3.8.2)
