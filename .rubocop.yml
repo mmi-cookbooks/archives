@@ -1,0 +1,44 @@
+# Offense count: 1
+Metrics/AbcSize:
+  Max: 62
+
+# Offense count: 1
+Metrics/CyclomaticComplexity:
+  Max: 13
+
+# Offense count: 2
+# Configuration parameters: AllowURI, URISchemes.
+Metrics/LineLength:
+  Max: 180
+
+# Offense count: 2
+# Configuration parameters: CountComments.
+Metrics/MethodLength:
+  Max: 33
+
+# Offense count: 1
+Metrics/PerceivedComplexity:
+  Max: 15
+
+# Offense count: 1
+Style/MethodLength:
+  Max: 40
+
+# Offense count: 2
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/ClassAndModuleChildren:
+  Exclude:
+    - 'libraries/untar.rb'
+
+# Offense count: 2
+# Configuration parameters: Exclude.
+Style/Documentation:
+  Exclude:
+    - 'spec/**/*'
+    - 'test/**/*'
+    - 'libraries/untar.rb'
+
+# Offense count: 1
+# Configuration parameters: EnforcedStyle, SupportedStyles.
+Style/VariableName:
+  Enabled: false
